@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="banner">
+    <section id="banner">
       <img src="image/logo.png" class="logo" />
       <div class="banner-text">
         <h1>Hair Studio</h1>
@@ -18,5 +18,36 @@
         </div>
       </div>
     </section>
+
+    <!-- nav -->
+
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">MEET US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="image/menu.png" id="menu" />
+    </div>
+
+    <script>
+      var menubtn = document.getElementById("menubtn");
+      var sidenav = document.getElementById("sidenav");
+      var menu = document.getElementById("menu");
+
+      menubtn.onclick = function () {
+        if (sidenav.style.right == "-250px") {
+          sidenav.style.right = "0";
+        } else {
+          sidenav.style.right = "-250px";
+        }
+      };
+    </script>
   </body>
 </html>
