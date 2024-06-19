@@ -3,7 +3,9 @@
   margin: 0;
   padding: o;
 }
-
+body{
+  font-family: Poppins;
+}
 #banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #009688),
     url(image/banner.jpg);
